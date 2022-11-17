@@ -7,7 +7,7 @@ import { useWallet } from '@solana/wallet-adapter-react'
 import Connected from '../components/Connected'
 import dynamic from 'next/dynamic'
 
-const  NavBar = dynamic(() => import('../components/Navbar'), { ssr: false })
+const  NavBar = dynamic(() => import('../components/NavBar'), { ssr: false })
 
  const Home: NextPage =() => {
   const { connected } = useWallet()
